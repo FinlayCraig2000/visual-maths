@@ -17,6 +17,7 @@ export default class App extends React.Component {
               <NavigationBar />
               
               <Routes>
+                <Route path={`${linkPathsTypeface.OldDefault}`} element={<Home />}/>
                 <Route path={`${linkPathsTypeface.Default}`} element={<Home />}/>
                 <Route path={`${linkPathsTypeface.BasicMaths}`} element={<BasicMaths />}/>
                 <Route path={`${linkPathsTypeface.AdvancedMaths}`} element={<AdvancedMaths/>}/>

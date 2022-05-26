@@ -61,7 +61,7 @@ export class AboutPageContainer extends React.Component {
                         />
                         <p>
                             This website was created by Finlay Craig. You can check out my
-                            <span> <a href="./" target="_blank">portfilio website</a> </span>
+                            <span> <a href="https://finlaycraig2000.github.io/portfolio/" target="_blank">portfilio website</a> </span>
                             for more information about me.
                         </p>
                     </div>

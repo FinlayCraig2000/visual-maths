@@ -1,5 +1,6 @@
 export const linkPathsTypeface = {
-    Default: "/",
+    OldDefault: "/",
+    Default: "home",
     BasicMaths: "basic-maths",
     AdvancedMaths: "advanced-maths",
     ErrorPage: "*",
