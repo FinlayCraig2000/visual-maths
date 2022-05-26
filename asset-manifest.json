@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/visual-maths/static/css/main.27215389.css",
-    "main.js": "/visual-maths/static/js/main.b2f5a918.js",
-    "static/js/787.7f97493f.chunk.js": "/visual-maths/static/js/787.7f97493f.chunk.js",
-    "index.html": "/visual-maths/index.html",
-    "main.27215389.css.map": "/visual-maths/static/css/main.27215389.css.map",
-    "main.b2f5a918.js.map": "/visual-maths/static/js/main.b2f5a918.js.map",
-    "787.7f97493f.chunk.js.map": "/visual-maths/static/js/787.7f97493f.chunk.js.map"
+    "main.css": "/visual-maths/index/static/css/main.27215389.css",
+    "main.js": "/visual-maths/index/static/js/main.b69131b4.js",
+    "static/js/787.7f97493f.chunk.js": "/visual-maths/index/static/js/787.7f97493f.chunk.js",
+    "index.html": "/visual-maths/index/index.html",
+    "main.27215389.css.map": "/visual-maths/index/static/css/main.27215389.css.map",
+    "main.b69131b4.js.map": "/visual-maths/index/static/js/main.b69131b4.js.map",
+    "787.7f97493f.chunk.js.map": "/visual-maths/index/static/js/787.7f97493f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.27215389.css",
-    "static/js/main.b2f5a918.js"
+    "static/js/main.b69131b4.js"
   ]
 }
