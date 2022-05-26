@@ -1,0 +1,20 @@
+.background-colour-container {
+    position: absolute;
+    right: 1rem;
+}
+
+.background-toggle-mode {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.background-toggle-mode span {
+    margin: 0;
+}
+
+.background-toggle-mode:hover {
+    background: var(--background-colour);
+    border-radius: 15px;
+}

@@ -1,0 +1,32 @@
+.pythagorean-svg-container {
+    width: 160px;
+}
+
+.pythagorean-svg-container text {
+    fill: var(--basic-font-colour);
+}
+
+.pythagorean-svg-container polygon {
+    fill: var(--basic-font-colour);
+}
+
+/* A² */
+
+g[id="a"][data-highlight="true"] polygon[id="a"] {
+    stroke: var(--yellow-scale-2);
+    fill: var(--yellow-scale-2);
+}
+
+/* B² */
+
+g[id="b"][data-highlight="true"] polygon[id="b"] {
+    stroke: var(--yellow-scale-2);
+    fill: var(--yellow-scale-2);
+}
+
+/* C² */
+
+g[id="c"][data-highlight="true"] polygon[id="c"] {
+    stroke: var(--yellow-scale-2);
+    fill: var(--yellow-scale-2);
+}

@@ -1,0 +1,73 @@
+.circle-svg-container {
+    width: 160px;
+}
+
+.circle-svg-container line {
+    stroke-width: 2.5px;
+    stroke: var(--basic-font-colour);
+}
+
+.circle-svg-container text {
+    fill: var(--basic-font-colour);
+}
+
+.circle-svg-container rect {
+    fill: var(--purple-scale-2);
+}
+
+.circle-svg-container circle {
+    stroke: var(--basic-font-colour);
+    stroke-width: 5px;
+}
+
+.circle-svg-container circle[id="inner"] {
+    fill: var(--basic-font-colour);
+    stroke: var(--basic-font-colour);
+    stroke-width: 5px;
+}
+
+.circle-svg-container circle[id="outter"] {
+    fill: none;
+    stroke: var(--basic-font-colour);
+    stroke-width: 5px;
+}
+
+/* circumference */
+
+g[id="circumference"][data-highlight="true"] circle[id="outter"] {
+    stroke: var(--yellow-scale-2);
+}
+
+g[id="circumference"][data-highlight="true"] text[id="circumference"] {
+    fill: var(--yellow-scale-2);
+}
+
+/* diameter */
+
+g[id="diameter"][data-highlight="true"] circle[id="inner"] {
+    stroke: var(--yellow-scale-2);
+    fill: var(--yellow-scale-2);
+}
+
+g[id="diameter"][data-highlight="true"] line[id="diameter"] {
+    stroke: var(--yellow-scale-2);
+}
+
+g[id="diameter"][data-highlight="true"] text[id="diameter"] {
+    fill: var(--yellow-scale-2);
+}
+
+/* radius */
+
+g[id="radius"][data-highlight="true"] circle[id="inner"] {
+    stroke: var(--yellow-scale-2);
+    fill: var(--yellow-scale-2);
+}
+
+g[id="radius"][data-highlight="true"] line[id="radius"] {
+    stroke: var(--yellow-scale-2);
+}
+
+g[id="radius"][data-highlight="true"] text[id="radius"] {
+    fill: var(--yellow-scale-2);
+}

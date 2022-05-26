@@ -1,0 +1,6 @@
+.divide-symbol {
+    background: var(--basic-font-colour);
+    height: 0.125em;
+    width: 100%;
+    margin: 10px 0px;
+}

@@ -1,0 +1,21 @@
+.basic-input {
+    border: none;
+    padding: 0.5em;
+    font-size: var(--basic-font-size);
+    color: var(--basic-font-colour);
+    background: transparent;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.basic-input:hover {
+    background: rgba(255, 255, 255, 50%);
+}
+
+input::placeholder {
+    color: var(--basic-font-colour);
+}
+
+.basic-input:focus-visible {
+    outline: none;
+}

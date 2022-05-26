@@ -1,0 +1,25 @@
+.basic-component-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--purple-scale-2);
+    border-radius: 15px;
+    padding: calc(var(--basic-font-size) + 0.25rem);
+}
+
+.description-component-display {
+    display: none;
+}
+
+.description-component-display[data-extended=true] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--purple-scale-2);
+    border-radius: 15px;
+    padding: calc(var(--basic-font-size) + 0.25rem);
+}

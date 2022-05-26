@@ -1,0 +1,49 @@
+.home-page-about-container {
+    max-width: 50vw;
+}
+
+.question-about-container a {
+    color: var(--basic-font-colour);
+    text-decoration: none;
+    position: relative;
+}
+
+.question-about-container span {
+    margin: 0;
+}
+
+.question-about-container a::before {
+    content: "";
+    display:block;
+    position: absolute;
+    transition: 0.4s ease-in-out;
+    transform-origin: right;
+    border-bottom: 0.2em solid var(--red-scale-2);
+    width: 100%;
+    right: 0;
+    bottom: -0.4em;
+}
+
+.question-about-container a:hover::before {
+    content: "";
+    border-bottom: 0.2em solid var(--red-scale-2);
+    width: 0;
+}
+
+
+.question-about-container a::after {
+    content: "";
+    display:block;
+    position: absolute;
+    transition: 0.4s ease-in-out;
+    border-bottom: 0.2em solid var(--purple-scale-2);
+    width: 0;
+    left: 0;
+    bottom: -0.4em;
+}
+
+.question-about-container a:hover::after {
+    content: "";
+    border-bottom: 0.2em solid var(--purple-scale-2);
+    width: 100%;
+}

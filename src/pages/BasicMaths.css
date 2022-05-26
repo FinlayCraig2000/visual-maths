@@ -1,0 +1,5 @@
+.basic-math-page-component {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}

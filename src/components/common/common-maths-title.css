@@ -1,0 +1,18 @@
+.maths-title-container {
+
+    margin: auto 2rem;
+    text-align: left;
+    background: var(--purple-scale-2);
+    width: max-content;
+    border-radius: 15px 15px 0px 0px;
+    padding: 0rem 1rem;
+}
+
+.maths-title-container:hover {
+    background: var(--purple-scale-5);
+    /* background: linear-gradient(var(--purple-scale-4), var(--purple-scale-2)); */
+}
+
+.h3 {
+    margin: 0;
+}

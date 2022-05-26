@@ -1,0 +1,13 @@
+.result-span-component {
+    background: var(--result-background-colour);
+    padding: 1em;
+    border-radius: 15px;
+}
+
+.result-container {
+    display: flex;
+}
+
+.equals-span-component {
+    user-select: none;
+}

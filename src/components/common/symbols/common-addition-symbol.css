@@ -1,0 +1,17 @@
+.addition-symbol {
+    background: var(--basic-font-colour);
+    height: 0.125em;
+    width: var(--basic-font-size);
+    position: relative;
+}
+
+.addition-symbol::before {
+    content: "";
+    background: var(--basic-font-colour);
+    position: absolute;
+    height: 0.125em;
+    width: var(--basic-font-size);
+    bottom: 0;
+    left: 0;
+    transform: rotate(90deg);
+}

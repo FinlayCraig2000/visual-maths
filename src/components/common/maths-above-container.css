@@ -1,0 +1,4 @@
+.about-maths-title-above-container {   
+    display: flex;
+    justify-content: space-between;
+}
