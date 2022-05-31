@@ -6,7 +6,7 @@ import { AdvancedMathsPiCircumference } from "../components/maths/advanced/PiCir
 import { AdvancedMathsPiDiameter } from "../components/maths/advanced/PiDiameter";
 import { AdvancedMathsPiRadius } from "../components/maths/advanced/PiRadius";
 import { AdvancedMathsPythagorean } from "../components/maths/advanced/Pythagorean";
-import "./BasicMaths.css"
+import { CommonMathLayoutComponent } from "../components/common/common-math-page";
 
 export class AdvancedMaths extends React.Component {
     constructor(props) {
@@ -19,8 +19,8 @@ export class AdvancedMaths extends React.Component {
     render() {
         return (
             <MainContainer>
-                <div className="basic-math-page-component">
-                    <h1>Maths+ page</h1>
+                <CommonMathLayoutComponent>
+                    <h1>Advanced Maths page</h1>
 
                     <AdvancedMathsRoot />
                     <AdvancedMathsSquared />
@@ -28,7 +28,7 @@ export class AdvancedMaths extends React.Component {
                     <AdvancedMathsPiDiameter />
                     <AdvancedMathsPiRadius />
                     <AdvancedMathsPythagorean />
-                </div>
+                </CommonMathLayoutComponent>
             </MainContainer>
         )
     }

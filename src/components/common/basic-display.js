@@ -3,13 +3,6 @@ import React from "react";
 import "./basic-display.css"
 
 export class BasicDisplayComponent extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-
-        };
-    }
-
     render() {
         let basicContainer = "basic";
 

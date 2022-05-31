@@ -11,15 +11,15 @@ export class CommonInput extends React.Component {
                 maxLength={this.props.maxLength}
                 placeholder={this.props.placeholder}
                 autoComplete="off"
-                value={this.props.value}
                 onChange={e => {
-                    const digits = e.target.value.replace(/[^0-9]/g, "");
-                    if (digits.length === 0) {
-                        this.props.onChange(undefined);
-                    }
-                    else {
-                        this.props.onChange(parseInt(digits));
-                    }
+                    // const digits = e.target.value.replace(/[^0-9]/g, "");
+                    // if (digits.length === 0) {
+                    //     const a = e.target.value.replace(/[^A-Za-z]/g, "");
+                    // }
+                    // else {
+                    //     this.props.onChange(parseInt(digits));
+                    // }
+                    this.props.onChange(e.target.value);
                 }}
                 onMouseEnter={this.props.onMouseEnter}
                 onMouseLeave={this.props.onMouseLeave}

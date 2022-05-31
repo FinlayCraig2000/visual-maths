@@ -7,6 +7,8 @@ import { BasicDisplayComponent } from "../../common/basic-display";
 import { DescriptionToggleComponent } from "../../common/description-toggle";
 import { MathsTitleAboveContainer } from "../../common/maths-above-container";
 import { CommonMathFlexDisplay } from "../../common/common-math-flex-display";
+import { CommonRootSymbol } from "../../common/symbols/common-root-symbol";
+import { root } from "../../../helper/calculations";
 
 export class AdvancedMathsRoot extends React.Component {
     constructor(props) {
@@ -32,7 +34,7 @@ export class AdvancedMathsRoot extends React.Component {
             return
         }
 
-        let a = Math.sqrt(this.state.valueA)
+        let a = root(this.state.valueA)
 
         this.setState({result: a})
     };
@@ -58,7 +60,9 @@ export class AdvancedMathsRoot extends React.Component {
                     <CommonMathFlexDisplay
                         flexDirection="row"
                     >
-                        √
+                        
+                        <CommonRootSymbol />
+
                         <CommonInput
                             className="square-root-input-a-component"
                             value={this.state.valueA}
@@ -69,7 +73,6 @@ export class AdvancedMathsRoot extends React.Component {
                             }}
                         />
 
-                        <span style={{width: this.state.width}} className="square-root-symbol"/>
                     </CommonMathFlexDisplay>
 
                     <CommonResult 

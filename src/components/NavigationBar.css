@@ -15,9 +15,6 @@
 
 .navigation-bar-component a {
     padding: 1rem;
-    color: var(--navigation-font-colour);
-    font-size: var(--basic-font-size);
-    text-decoration: none;
     border-radius: 15px;
 }
 

@@ -1,0 +1,6 @@
+.math-page-layout-component {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    min-width: var(--min-width-container);
+}

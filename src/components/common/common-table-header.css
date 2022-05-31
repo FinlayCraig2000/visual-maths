@@ -1,0 +1,9 @@
+thead {
+    font-size: calc(var(--basic-font-size) + 0.17rem);
+    background-color: var(--red-scale-3);
+}
+
+th {
+    /* width: 100px; */
+    width: auto;
+}

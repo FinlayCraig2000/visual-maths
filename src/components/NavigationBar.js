@@ -13,6 +13,7 @@ export class NavigationBar extends React.Component {
                     <Link to={`${linkPathsTypeface.Default}`}>Home</Link>
                     <Link to={`${linkPathsTypeface.BasicMaths}`}>Basic Maths</Link>
                     <Link to={`${linkPathsTypeface.AdvancedMaths}`}>Advanced Maths</Link>
+                    <Link to={`${linkPathsTypeface.Search}`}>Search</Link>
                 </nav>
 
                 <DarkModeToggleContainer />

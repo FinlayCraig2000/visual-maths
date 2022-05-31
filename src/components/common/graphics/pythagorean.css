@@ -3,7 +3,8 @@
 }
 
 .pythagorean-svg-container text {
-    fill: var(--basic-font-colour);
+    fill: var(--inverted-font-colour);
+    font-weight: bold;
 }
 
 .pythagorean-svg-container polygon {
@@ -17,6 +18,10 @@ g[id="a"][data-highlight="true"] polygon[id="a"] {
     fill: var(--yellow-scale-2);
 }
 
+g[id="a"][data-highlight="true"] text[id="a"] {
+    fill: var(--red-scale-4);
+}
+
 /* B² */
 
 g[id="b"][data-highlight="true"] polygon[id="b"] {
@@ -24,9 +29,17 @@ g[id="b"][data-highlight="true"] polygon[id="b"] {
     fill: var(--yellow-scale-2);
 }
 
+g[id="b"][data-highlight="true"] text[id="b"] {
+    fill: var(--red-scale-4);
+}
+
 /* C² */
 
 g[id="c"][data-highlight="true"] polygon[id="c"] {
     stroke: var(--yellow-scale-2);
     fill: var(--yellow-scale-2);
+}
+
+g[id="c"][data-highlight="true"] text[id="c"] {
+    fill: var(--red-scale-4);
 }

@@ -19,3 +19,14 @@ input::placeholder {
 .basic-input:focus-visible {
     outline: none;
 }
+
+/* Special */
+
+.squared-input-a-component {
+    text-align: right;
+}
+
+.squared-input-b-component {
+    text-align: left;
+    margin-bottom: 20px;
+}

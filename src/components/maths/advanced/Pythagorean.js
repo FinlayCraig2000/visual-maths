@@ -6,7 +6,7 @@ import { BasicDisplayComponent } from "../../common/basic-display";
 import { DescriptionToggleComponent } from "../../common/description-toggle";
 import { MathsTitleAboveContainer } from "../../common/maths-above-container";
 import { CommonMathFlexDisplay } from "../../common/common-math-flex-display";
-import { addition, square } from "../../../helper/calculations";
+import { addition, root, square, subtract } from "../../../helper/calculations";
 import { CommonAdditionSymbol } from "../../common/symbols/common-addition-symbol";
 import { PythagoreanGrapic } from "../../common/graphics/pythagorean";
 import { CommonResult } from "../../common/common-result";
@@ -41,24 +41,31 @@ export class AdvancedMathsPythagorean extends React.Component {
         this.setState({ descriptionToggle: !this.state.descriptionToggle });
     };
 
-    clear() {
-        this.setState({valueA: undefined});
-        this.setState({valueB: undefined});
-        this.setState({valueC: undefined});
-    }
-
     calculation() {
-        // Check when there is nothing in text box
-        if (this.state.valueA === undefined || this.state.valueB === undefined) {
-            this.setState({valueC: undefined})
+        let a;
+
+        // Check if all entered to not crash...
+        if (this.state.valueA !== undefined && this.state.valueB !== undefined && this.state.valueC !== undefined) {
+            this.setState({result: defaultText.resultText});
+            this.setState({valueA: undefined}); // Yeah... this isn't good way of dealing with a bug but oh well.
             return
         }
 
-        let a = addition(square(this.state.valueA, squareNumber.two), square(this.state.valueB, squareNumber.two));
+        // Check when there is nothing in text box, not the best way to handle this but it works...
+        if (this.state.valueC === undefined) {
+            a = addition(square(this.state.valueA, squareNumber.two), square(this.state.valueB, squareNumber.two));
+        }
 
-        console.log(a);
+        if (this.state.valueB === undefined) {
+            a = subtract(square(this.state.valueC, squareNumber.two), square(this.state.valueA, squareNumber.two));
+        }
 
-        this.setState({valueC: a});
+        if (this.state.valueA === undefined) {
+            a = subtract(square(this.state.valueC, squareNumber.two), square(this.state.valueB, squareNumber.two));
+        }
+        
+        // console.log("result : " + a + " | " + this.state.valueA + " | " + this.state.valueB + " | " + this.state.valueC);
+        this.setState({result: a.toString() + "² | " + root(a).toString() + "cm"});
     };
 
     render() {
@@ -89,7 +96,6 @@ export class AdvancedMathsPythagorean extends React.Component {
                                 className="pythagorean-input-a-component"
                                 id="first"
                                 placeholder={mathsText.A}
-                                // value={this.state.valueA}
                                 onChange={x => {
                                     this.setState({valueA: x}, this.calculation)
                                 }}
@@ -103,7 +109,6 @@ export class AdvancedMathsPythagorean extends React.Component {
                                 className="pythagorean-input-b-component"
                                 id="first"
                                 placeholder={mathsText.B}
-                                // value={this.state.valueB}
                                 onChange={x => {
                                     this.setState({valueB: x}, this.calculation)
                                 }}
@@ -117,7 +122,6 @@ export class AdvancedMathsPythagorean extends React.Component {
                                 className="pythagorean-input-c-component"
                                 id="first"
                                 placeholder={mathsText.C}
-                                // value={this.state.valueC}
                                 onChange={x => {
                                     this.setState({valueC: x}, this.calculation)
                                 }}

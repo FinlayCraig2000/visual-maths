@@ -41,6 +41,10 @@ export function square(a, b) {
     return Math.pow(a, b)
 }
 
+export function root(a) {
+    return Math.sqrt(a)
+}
+
 export function piCircumference(radius) {
     return 2 * Math.PI * radius
 }

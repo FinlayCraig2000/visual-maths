@@ -20,6 +20,12 @@ span {
   color: var(--basic-font-colour);
 }
 
+a {
+  color: var(--navigation-font-colour);
+  font-size: var(--basic-font-size);
+  text-decoration: none;
+}
+
 h1 {
   font-size: calc(var(--basic-font-size) + 1rem);
   text-align: center;
@@ -45,12 +51,28 @@ li {
   padding: 0.3125em 0px;
 }
 
+table {
+  border-collapse: collapse;
+  border: 1px solid var(--basic-font-colour);
+  width: 100%;
+}
+
+tr {
+  border-bottom: 1px solid var(--basic-font-colour);
+}
+
+th, td {
+  text-align: left;
+  padding: 12px;
+}
+
 html[dark] {
   --background-colour: var(--black-scale-1);
   --header-background-colour: var(--black-scale-2);
   --footer-background-colour: var(--black-scale-3);
   --header-font-colour: var(--red-scale-1);
   --basic-font-colour: var(--white-pure);
+  --inverted-font-colour: var(--black-scale-4);
   --navigation-font-colour: var(--white-pure);
   --result-background-colour: var(--purple-scale-4);
 }
@@ -129,6 +151,9 @@ html[dark] {
   --navigation-font-colour: var(--black-pure);
   --basic-font-colour: var(--black-scale-4);
   --padding-size: var(--basic-font-size);
+  --min-width-container: 55rem;
+
+  --inverted-font-colour: var(--white-pure);
   
   --basic-font-size: 1rem;
 }
@@ -137,6 +162,6 @@ html[dark] {
 
 @media only screen and (min-device-width: 1921px) {
   :root {
-    --basic-font-size: 2rem;
+    --basic-font-size: 1.5rem;
   }
 }

@@ -69,7 +69,7 @@ export class AdvancedMathsPiCircumference extends React.Component {
                         <span>2 *</span>
 
                         <CommonInput
-                            className="addition-input-a-component"
+                            className="circumference-input-a-component"
                             id="first"
                             placeholder={mathsText.Radius}
                             onChange={x => {

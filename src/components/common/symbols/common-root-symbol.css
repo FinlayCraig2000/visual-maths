@@ -1,0 +1,29 @@
+.root-symbol {
+    background: var(--basic-font-colour);
+    height: 0.125em;
+    width: calc(var(--basic-font-size) + 26px);
+    transform: rotate(110deg) translate3d(-10px, -20px, 0px);
+    position: relative;
+}
+
+.root-symbol::after {
+    content: "";
+    background: var(--basic-font-colour);
+    position: absolute;
+    height: 0.125em;
+    width: calc(var(--basic-font-size) - 1px);
+    bottom: 0px;
+    left: 0px;
+    transform: rotate(-45deg) translate3d(17px, 24px, 0px);
+}
+
+.root-symbol::before {
+    content: "";
+    background: var(--basic-font-colour);
+    position: absolute;
+    height: 0.125em;
+    width: calc(var(--basic-font-size) + 184px);
+    bottom: 94px;
+    left: -134px;
+    transform: rotate(-110deg);
+}
